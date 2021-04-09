@@ -28,4 +28,12 @@ module.exports = function(app){
             res.json(err)
         })
     });
+
+    app.post("/api/workouts/range", function (res, res) {
+        Workout.create({})
+        .then(data => res.json(data))
+        .catch(err => {
+            res.json(err)
+        })
+    })
 }
